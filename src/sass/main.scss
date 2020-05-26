@@ -1,9 +1,54 @@
 @import '../../node_modules/reveal.js/css/reveal.css';
-@import '../../node_modules/reveal.js/css/theme/moon.css';
+@import '../../node_modules/reveal.js/css/theme/simple.css';
 @import '../../node_modules/reveal.js/lib/css/monokai.css';
 
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
+
+.reveal h2 {
+  font-size: 1.8em;
+}
+
 .title {
-  color: #fff;
-  top: 150px;
-  position: relative;
+  margin-bottom: 100px !important;
+}
+.grid-block {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+}
+
+.small-text {
+  font-size: 28px;
+}
+
+.very-small-text {
+  margin: 10px 0px !important;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20%;
+}
+
+.grid-block__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.grid-block.grid-left {
+  .grid-block__content {
+    align-items: flex-start;    
+  }
+  .very-small-text {
+    padding-left: 0px; 
+    margin: 5px !important;   
+    &::before {
+      content: "•";
+      position: relative;
+      left: -10px;
+    }
+  }
 }

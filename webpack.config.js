@@ -98,7 +98,7 @@ module.exports = (env) => ({
       ],
     }),
     new HTMLWebpackPlugin({
-      title: "Reveal.js project with Webpack, TypeScript and SASS",
+      title: "JS Frameworks",
       filename: 'index.html',
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
